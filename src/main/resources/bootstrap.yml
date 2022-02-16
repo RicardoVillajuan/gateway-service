@@ -17,7 +17,7 @@ spring:
         uri: http://localhost:8093
         predicates:
         - Path=/product/**
-      - id: enterprise-service
+      - id: custumer-service
         uri: http://localhost:8094
         predicates:
         - Path=/enterprise/**

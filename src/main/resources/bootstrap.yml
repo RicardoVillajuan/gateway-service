@@ -25,7 +25,18 @@ spring:
         uri: http://localhost:8095
         predicates:
         - Path=/account/**
-  
+      - id: deposits-service
+        uri: http://localhost:8096
+        predicates:
+        - Path=/deposits/**
+      - id: retreats-service
+        uri: http://localhost:8097
+        predicates:
+        - Path=/retreat/**
+      - id: movement-service
+        uri: http://localhost:8098
+        predicates:
+        - Path=/movement/**
           
       
 eureka: 
